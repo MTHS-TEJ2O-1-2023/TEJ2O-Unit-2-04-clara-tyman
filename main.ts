@@ -1,8 +1,19 @@
-/* Copyright (c) 2020 MTHS All rights reserved
+/* Copyright (c) 2023 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
-*/
+ * Created by: Clara Tyman
+ * Created on: Sep 2023
+ * This program shows the temperature 
+*/                  
 
-basic.showString('Hello, World!')
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+basic.pause(1000)
+
+// varible
+let temperature: number
+
+
+input.onButtonPressed(Button.A, function () {
+temperature = input.temperature ()
+    basic.showString('The temperature is' + temperature +'C.')
+})
