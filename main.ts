@@ -13,7 +13,7 @@ basic.pause(1000)
 let temperature: number
 
 
-input.onButtonPressed(Button.A, function () {
-temperature = input.temperature ()
+input.onButtonPressed(Button.A, function(){
+temperature = input.temperature()
   basic.showString('The temperature is' + temperature +'C.')
 })
